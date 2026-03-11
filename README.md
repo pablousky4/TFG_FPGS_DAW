@@ -46,13 +46,16 @@ Navega a la carpeta descargada y abre el archivo index.html en tu navegador web 
 
 ---
 
-🔐 Credenciales de PruebaPara probar los flujos restringidos y la lógica de inicio de sesión implementada en JavaScript:
+## 🔐 Credenciales de Prueba 
+Para probar los flujos restringidos y la lógica de inicio de sesión implementada en JavaScript:
+
 Cliente: User(pablo) Password(pablo)
+
 Empresa: User(admin) Password(admin)
 
 ---
 
-📂 Estructura de Vistas principales
+## 📂 Estructura de Vistas principales
 /index.html: Landing page principal.
 
 /login.html & /register.html: Autenticación de clientes.
@@ -67,7 +70,7 @@ Empresa: User(admin) Password(admin)
 
 ---
 
-🤝 Contribución
+## 🤝 Contribución
 ¡Las contribuciones son bienvenidas! Si deseas mejorar el diseño, añadir nuevas funcionalidades o conectar este frontend con una API backend:
 
 Haz un Fork del proyecto.
