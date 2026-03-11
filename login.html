@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="shortcut icon" href="https://i.postimg.cc/CKgwQCZM/prtuebackxw.png">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    #fondo {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+        padding: 30px; 
+        padding-bottom: 0px !important;
+        width: calc(100% - 60px); 
+        max-width: 400px; 
+        margin: auto; 
+        height: auto; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fondo input[type="text"],
+    #fondo input[type="password"],
+    #fondo button {
+        border-radius: 12px;
+        font-size: 1.2em; 
+        padding: 10px 20px; 
+        margin-bottom: 10px; 
+    }
+
+    .error-message {
+        color: red;
+    }
+
+    .circle-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    @media (max-width: 768px) {
+        #fondo {
+            padding: 20px; 
+            width: calc(100% - 40px); 
+        }
+
+        #fondo input[type="text"],
+        #fondo input[type="password"],
+        #fondo button {
+            font-size: 1em; 
+            padding: 8px 15px; 
+        }
+
+        .circle-icon {
+            top: 10px;
+            left: 10px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        #fondo {
+            padding: 15px; 
+            width: calc(100% - 30px); 
+        }
+
+        #fondo input[type="text"],
+        #fondo input[type="password"],
+        #fondo button {
+            font-size: 0.9em; 
+            padding: 7px 12px; 
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .circle-icon {
+            top: 5px;
+            left: 5px;
+        }
+    }
+  </style>
+</head>
+<body class="bg-light">
+    <div class="circle-icon">
+      <a href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+        <path d="M15 18l-6-6 6-6"></path>
+      </svg></a>
+    </div>
+  <div class="container-fluid d-flex align-items-center justify-content-center vh-100">
+    <div id="fondo" class="card p-4">
+      <h2 class="text-center mb-4">Accede a tu cuenta</h2>
+      <form id="loginForm" class="space-y-4">
+        <div class="form-group">
+          <input type="text" class="form-control" id="email" placeholder="Pablo@AnyRent.com" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Acceder</button>
+      </form>
+      <div id="error" class="error-message"></div>
+      <hr>
+      <p class="text-center mb-4">O continúa con:</p>
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-light mr-2"><i class="fab fa-google"></i></button>
+        <button class="btn btn-light mr-2"><i class="fab fa-facebook"></i></button>
+        <button class="btn btn-light mr-2"><i class="fab fa-twitter"></i></button>
+      </div>
+      <p class="mt-4 text-center">¿No tienes cuenta? <a href="register.html" class="text-primary">Haz clic aquí</a></p>
+      <p style="color:white;">User: pablo Contraseña: pablo</p>
+    </div> 
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if (email === 'pablo' && password === 'pablo') {
+            window.location.href = 'escaparate-logueado.html'; 
+        } else {
+            document.getElementById('error').innerHTML = 'Datos de acceso inválidos'; 
+        }
+    });
+  </script>
+</body>
+</html>

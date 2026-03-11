@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnyRent</title>
+  <link rel="shortcut icon" href="https://i.postimg.cc/CKgwQCZM/prtuebackxw.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+footer .container > *:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    #empezar:hover {
+      color: black !important;
+    }
+
+    #section2 {
+      background-color: white !important;
+      margin-top: 20px;
+    }
+
+    #fondo {
+      background-color: #475569 !important;
+      color: white !important;
+      margin-top: 20px;
+    }
+
+    #sebas {
+      border-radius: 22px;
+    }
+
+    #citado {
+      font-style: italic;
+      font-weight: normal !important;
+    }
+
+    #azul {
+      color: rgb(22, 88, 255);
+    }
+
+    .py-4 {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
+    #empezar {
+      color: white;
+      font-weight: bold;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-img-top {
+      height: 170px;
+    }
+
+    .card-img {
+      height: 400px;
+    }
+
+    #categorias1 {
+      padding-top: 0px
+    }
+
+    .logo {
+      max-height: 100px;
+    }
+
+    #black {
+      color: black !important;
+    }
+
+    #badge1, #badge2, #badge3, #badge4, #badge5, #buscador, #botonBuscar {
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Media queries */
+    @media (max-width: 576px) {
+      body {
+        padding-top: 120px;
+      }
+      .h2 {
+        font-size: 1.5rem;
+      }
+      .btn-outline-light {
+        font-size: 0.8rem;
+      }
+      .display-4 {
+        font-size: 2rem;
+      }
+      .logo {
+        max-height: 60px;
+      }
+      .py-4 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .card-img {
+        height: auto;
+      }
+      #fondo .col-md-4 img, #section2 .col-md-4 img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .h2 {
+        font-size: 2rem;
+      }
+      .btn-outline-light {
+        font-size: 1rem;
+      }
+      .display-4 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="h2 mb-0"><img class="logo" src="https://i.postimg.cc/mrdLtwWg/Sin-t-tulo.png"></div>
+          <div>
+            <a href="login.html"><button class="btn btn-outline-light me-2">Accede a tu cuenta</button></a>
+            <a href="login-empresa.html"><button class="btn btn-outline-light">Empresas</button></a>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h1 class="display-4">Las mejores empresas a un clic</h1>
+          <div class="d-flex mt-3">
+            <input type="text" id="buscador" class="form-control me-2" placeholder="Busca por nombre de empresa, categoría o zona">
+            <button id="botonBuscar" class="btn btn-danger">Buscar</button>
+          </div>
+          <div class="d-flex mt-3">
+            <span id="badge1" class="badge bg-light text-dark">Peluquería</span>&nbsp;&nbsp;&nbsp;
+            <span id="badge2" class="badge bg-light text-dark">Restaurante</span>&nbsp;&nbsp;&nbsp;
+            <span id="badge3" class="badge bg-light text-dark">Maquinaria</span>&nbsp;&nbsp;&nbsp;
+            <span id="badge4" class="badge bg-light text-dark">Vehículos</span>&nbsp;&nbsp;&nbsp;
+            <span id="badge5" class="badge bg-light text-dark">Reparaciones</span>
+          </div>
+        </div>
+      </div><br>
+    </header>
+    <section class="py-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="h4">Categorías</h2>
+        <a href="#" class="text-primary">Ver todas las categorías</a>
+      </div>
+      <div id="categorias1" class="row mt-3">
+        <div class="col-6 col-sm-2">
+          <div class="card">
+            <a href="escaparate.html"><img src="https://i.postimg.cc/T3RCCjBx/imagen-peluqueria.jpg" class="card-img-top" alt="Category"></a>
+            <div class="card-body">
+              <h5 class="card-title">Peluquería</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+          <div class="card">
+            <a href="escaparate.html"><img src="https://i.postimg.cc/wjGLLhp0/f-elconfidencial-com-original-3b8-281-ef2-3b8281ef2d44ef19e6a613d298ccf635.jpg" class="card-img-top" alt="Category"></a>
+            <div class="card-body">
+              <h5 class="card-title">Restaurante</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+          <div class="card">
+            <a href="escaparate.html"><img src="https://i.postimg.cc/Yq2WPX2d/taladros-dewalt-blog.jpg" class="card-img-top" alt="Category"></a>
+            <div class="card-body">
+              <h5 class="card-title">Maquinaria</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+          <div class="card">
+            <a href="escaparate.html"><img src="https://i.postimg.cc/3r1y2gjm/Kia-Picanto-e1669369654915-1024x576.jpg" class="card-img-top" alt="Category"></a>
+            <div class="card-body">
+              <h5 class="card-title">Vehículos</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+          <div class="card">
+            <a href="escaparate.html"><img src="https://i.postimg.cc/XYC71F52/electrician.jpg" class="card-img-top" alt="Category"></a>
+            <div class="card-body">
+              <h5 class="card-title">Profesionales</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+          <div class="card">
+            <a href="escaparate.html"><img src="https://i.postimg.cc/L8tFZVLM/dbnsfzkttcktgyk78guu.jpg" class="card-img-top" alt="Category"></a>
+            <div class="card-body">
+              <h5 class="card-title">Hostelería</h5>
+            </div>
+          </div>
+        </div>
+        
+        <!-- para poner mas a copiar divs -->
+      </div>
+    </section>
+    <section class="py-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="h4">Más Buscados</h2>
+        <a href="#" class="text-primary">Descubre más</a>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-sm-4">
+              <div class="card">
+                <a href="escaparate.html"><img src="https://i.postimg.cc/zBLdTJ6R/servicios-salon-barberia.jpg" class="card-img" alt="Most Wanted"></a>
+                <div class="card-body">
+                  <span class="badge bg-secondary">PRO</span>
+                  <h5 class="card-title mt-2">Barbería Invictus</h5>
+                  <p class="card-text">Sebastián</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="card">
+                <a href="escaparate.html"><img src="https://i.postimg.cc/yN661G5G/Restaurante-Almibar-Full-11-1-1024x640.jpg" class="card-img" alt="Most Wanted"></a>
+                <div class="card-body">
+                  <span class="badge bg-secondary">PRO</span>
+                  <h5 class="card-title mt-2">Restaurante Almíbar</h5>
+                  <p class="card-text">Jesús</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="card">
+                <a href="escaparate.html"><img src="https://i.postimg.cc/rs4MZ20D/52327097-1028942237290548-440088406714744832-n.jpg" class="card-img" alt="Most Wanted"></a>
+                <div class="card-body">
+                  <span class="badge bg-secondary">PRO</span>
+                  <h5 class="card-title mt-2">Alquiler de Vehículos - Be Smart</h5>
+                  <p class="card-text">Francisco Javier</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      </div>
+    </section>
+    <section class="bg-light py-4 text-center" id="fondo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="h4">¿Quieres alquilar o reservar?</h2>
+            <p class="mt-2">Si tienes una empresa, o eres un particular, alquilas productos o servicios y quieres tener tu escaparate. Con nosotros puedes tener todo esto de forma gratuita!</p>
+            
+            <div class="d-flex justify-content-center mt-4" id="black">
+              <div class="card p-4 shadow-sm me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                </svg>
+                <p>Enlace personalizado</p>
+              </div>
+              <div class="card p-4 shadow-sm me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar">
+                  <path d="M3 4a2 2 0 0 1 2-2h1V0h2v2h4V0h2v2h1a2 2 0 0 1 2 2v2H3V4zm0 4v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8H3zm2 3h2v2H5v-2zm0 4h2v2H5v-2zm4-4h2v2H9v-2zm0 4h2v2H9v-2zm4-4h2v2h-2v-2zm0 4h2v2h-2v-2z"/>
+                </svg>
+                <p>Reservas Online</p>
+              </div>
+              <div class="card p-4 shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+                <p>Gestión de clientes</p>
+              </div>
+              
+            </div>
+            <a href="login-empresa.html"><button id="empezar" class="btn btn-info mt-3">Empieza ahora</button></a>
+          </div>
+          <div class="col-md-4">
+            <img src="https://i.postimg.cc/sxKdNffD/image-removebg-preview-4.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    
+  </section>
+  <section id="section2" class="bg-light py-4 text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img src="https://i.postimg.cc/z3mW4Nx6/Dise-o-sin-t-tulo.png" id="sebas" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+          <div class="d-flex flex-column h-100 justify-content-center">
+            <p id="citado" class="h5">Sebastián, Fundador de <span id="azul"><a href="escaparate.html">Barbería Invictus</a></span></p>
+            <h3 class="h4">“Desde que estoy en AnyRent todo es perfecto.”</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="fondo" class="bg-blue py-4 text-center d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 d-flex align-items-center">
+          <div class="d-flex flex-column align-items-center">
+            <h2 class="h3">Hazte PRO!</h2>
+            <p class="mt-2">Personalización, pagos por adelantado, más visualización de tu negocio y mucho más haciéndote PRO</p>
+            <a href="login-empresa.html"><button id="empezar" class="btn btn-outline-light mt-3">Hazte PRO</button></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="https://i.postimg.cc/N01gxcXL/image.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+    <footer class="bg-dark text-white py-3">
+      <div class="container d-flex justify-content-center align-items-center">
+        <p class="mb-0 me-3">©2024 AnyRent S.L. Todos los derechos reservados.</p>
+        <div class="d-flex">
+          <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>    
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
