@@ -44,10 +44,13 @@ Al tratarse de un proyecto estático (Frontend), no se requiere la instalación 
 2. **Abre el proyecto:**
 Navega a la carpeta descargada y abre el archivo index.html en tu navegador web favorito.
 
+---
+
 🔐 Credenciales de PruebaPara probar los flujos restringidos y la lógica de inicio de sesión implementada en JavaScript:
 Cliente: User(pablo) Password(pablo)
 Empresa: User(admin) Password(admin)
 
+---
 
 📂 Estructura de Vistas principales
 /index.html: Landing page principal.
@@ -61,6 +64,8 @@ Empresa: User(admin) Password(admin)
 /MenuEscaparate.html: Panel de configuración interno del negocio.
 
 /pago.html & /correcto.html: Flujo de checkout y pantalla de éxito.
+
+---
 
 🤝 Contribución
 ¡Las contribuciones son bienvenidas! Si deseas mejorar el diseño, añadir nuevas funcionalidades o conectar este frontend con una API backend:
